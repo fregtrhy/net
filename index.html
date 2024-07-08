@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASSINATURA ORIGINAL</title>
+    <title>Assinaturas de Streaming</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -27,7 +27,7 @@
             height: 400px; /* Altura fixa para todas as janelas */
             margin: 20px; /* Margem entre as janelas */
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 15px;
             background-color: #fff;
             text-align: center;
             overflow: hidden;
@@ -74,6 +74,25 @@
             background-color: #ff6600;
         }
 
+        .scroll-message {
+            width: 100%;
+            text-align: center;
+            background-color: #ff6600;
+            color: #fff;
+            padding: 10px 0;
+            font-size: 18px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            animation: slideMessage 3s ease-in-out infinite;
+        }
+
+        @keyframes slideMessage {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
         /* Estilos específicos para telas menores que 768px (dispositivos móveis) */
         @media only screen and (max-width: 768px) {
             .container {
@@ -96,8 +115,11 @@
     </style>
 </head>
 <body>
+    <!-- Aviso de deslizar a página -->
+    <div class="scroll-message">Deslize a página</div>
+
     <!-- Lista de Assinaturas -->
-    <div class="container">
+    <div class="container" style="padding-top: 50px;"> <!-- Adicionado padding-top para evitar sobreposição -->
         <!-- Assinatura Globo Play -->
         <div class="subscription">
             <img class="icon" src="https://s12.gifyu.com/images/SZ1wY.png" alt="Globo Play">
