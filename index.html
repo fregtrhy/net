@@ -73,28 +73,6 @@
         .buy-button:hover {
             background-color: #ff6600;
         }
-        .social-icons {
-            position: fixed;
-            z-index: 9999;
-            top: 20px;
-            right: 20px;
-            display: flex;
-            flex-direction: column;
-        }
-        .social-icon {
-            width: 50px;
-            height: 50px;
-            margin-bottom: 10px;
-            cursor: pointer;
-            transition: transform 0.3s ease-in-out;
-        }
-        .social-icon img {
-            width: 100%;
-            height: auto;
-        }
-        .social-icon:hover {
-            transform: scale(1.1) rotate(360deg);
-        }
 
         /* Estilos específicos para telas menores que 768px (dispositivos móveis) */
         @media only screen and (max-width: 768px) {
@@ -115,17 +93,6 @@
                 box-shadow: 0 0 0 0 rgba(255, 204, 0, 0.5);
             }
         }
-
-        /* Animação para os ícones sociais */
-        .social-icon:hover img {
-            animation: rotate 0.8s linear infinite;
-        }
-
-        @keyframes rotate {
-            100% {
-                transform: rotate(360deg);
-            }
-        }
     </style>
 </head>
 <body>
@@ -138,7 +105,8 @@
             <p>Acesso a conteúdos exclusivos da Globo.</p>
             <div class="button-container">
                 <p class="price">R$ 19,90/mês</p>
-                <a class="buy-button" href="https://wa.me/seu_numerodetelefone?text=Quero%20comprar%20a%20assinatura%20do%20Globo%20Play">Compre Agora</a>
+                <!-- Substitua 'seu_numerodetelefone' pelo seu número de telefone -->
+                <a class="buy-button" href="https://wa.me/message/GPIYPTNUMB55H1?text=Quero%20comprar%20a%20assinatura%20do%20Globo%20Play">Compre Agora</a>
             </div>
         </div>
 
@@ -149,7 +117,8 @@
             <p>Acesso à Globo Play e aos filmes do Telecine.</p>
             <div class="button-container">
                 <p class="price">R$ 29,90/mês</p>
-                <a class="buy-button" href="https://wa.me/seu_numerodetelefone?text=Quero%20comprar%20a%20assinatura%20do%20Globo%20Play%20%2B%20Telecine">Compre Agora</a>
+                <!-- Substitua 'seu_numerodetelefone' pelo seu número de telefone -->
+                <a class="buy-button" href="https://wa.me/message/GPIYPTNUMB55H1?text=Quero%20comprar%20a%20assinatura%20do%20Globo%20Play%20%2B%20Telecine">Compre Agora</a>
             </div>
         </div>
 
@@ -160,41 +129,10 @@
             <p>Acesso à Globo Play, a canais exclusivos e ao Telecine.</p>
             <div class="button-container">
                 <p class="price">R$ 39,90/mês</p>
-                <a class="buy-button" href="https://wa.me/seu_numerodetelefone?text=Quero%20comprar%20a%20assinatura%20do%20Globo%20Play%20%2B%20Canais%20%2B%20Telecine">Compre Agora</a>
+                <!-- Substitua 'seu_numerodetelefone' pelo seu número de telefone -->
+                <a class="buy-button" href="https://wa.me/message/GPIYPTNUMB55H1?text=Quero%20comprar%20a%20assinatura%20do%20Globo%20Play%20%2B%20Canais%20%2B%20Telecine">Compre Agora</a>
             </div>
         </div>
     </div>
-
-    <!-- Ícones sociais -->
-    <div class="social-icons">
-        <a class="social-icon" href="https://t.me/seu_username" onclick="expandIcon(event, this)">
-            <img src="https://s12.gifyu.com/images/SZBu3.png" alt="Telegram">
-        </a>
-        <a class="social-icon" href="https://wa.me/seu_numerodetelefone" onclick="expandIcon(event, this)">
-            <img src="https://s9.gifyu.com/images/SZBu7.png" alt="WhatsApp">
-        </a>
-        <a class="social-icon" href="https://www.facebook.com/sua_pagina" onclick="expandIcon(event, this)">
-            <img src="https://s9.gifyu.com/images/SZBQs.png" alt="Facebook">
-        </a>
-        <a class="social-icon" href="https://www.youtube.com/seu_canal" onclick="expandIcon(event, this)">
-            <img src="https://s12.gifyu.com/images/SZBut.png" alt="YouTube">
-        </a>
-    </div>
-
-    <script>
-        function expandIcon(event, icon) {
-            event.preventDefault();
-            var expandedIcon = icon.cloneNode(true);
-            expandedIcon.style.transition = "all 0.5s ease";
-            expandedIcon.style.position = "fixed";
-            expandedIcon.style.top = "50%";
-            expandedIcon.style.left = "50%";
-            expandedIcon.style.transform = "translate(-50%, -50%) scale(8)";
-            document.body.appendChild(expandedIcon);
-            setTimeout(function() {
-                window.location.href = icon.href;
-            }, 500); // Aguarda 0.5 segundos antes de redirecionar
-        }
-    </script>
 </body>
 </html>
