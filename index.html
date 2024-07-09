@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assinaturas de Streaming</title>
+    <title>ASSINATURAS ORIGINAL</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -120,6 +120,22 @@
             border-radius: 10px;
             width: 300px;
             text-align: center;
+            position: relative;
+            /* Adicionando o efeito de luz */
+            box-shadow: 0 0 20px rgba(255, 165, 0, 0.5);
+            animation: borderLightEffect 2s linear infinite;
+        }
+
+        @keyframes borderLightEffect {
+            0% {
+                box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5);
+            }
+            50% {
+                box-shadow: 0 0 20px rgba(255, 165, 0, 0.5), 0 0 40px rgba(255, 165, 0, 0.5);
+            }
+            100% {
+                box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5);
+            }
         }
 
         .modal-content h2 {
@@ -176,8 +192,14 @@
     <!-- Modal -->
     <div class="modal" id="subscriptionModal">
         <div class="modal-content">
-            <h2>BEM VINDO</h2>
-            <p>Venha adquirir sua assinatura original, precinho que caber bolso do brasileiro! Sobre assinatura algumas é tela tv, convite e conta (tv apenas para tv ativação via código NÃO envio e-mail e senha) (outras são convites envio para o seu e-mail particular ou se não estiver envio um) (outras são contas ideal para compartilhar para todos da família, amigo, revender “etc”) você tem dúvidas? Nos chamar!</p>
+            <h2>AVISO</h2>
+            <p>Procurando assinatura original? Precinho que cabe em seu bolso brasileiro.
+Temos tela, tv, conta, convite.
+“Tela tv ativação via código apenas para tv não envio e-mail e nem senha”
+“conta ideal para todos da família, amigo, colega, revender, etc. envio e-mail e senha”
+“convite eu envio para o seu e-mail particular ou qualquer um que você tenha se não estiver envio um” 
+
+comprando mais de 5 assinatura tem descontão.</p>
             <button class="close-button" onclick="closeModal()">Fechar</button>
         </div>
     </div>
@@ -212,7 +234,12 @@
         <div class="subscription">
             <img class="icon" src="https://s12.gifyu.com/images/SZ1wY.png" alt="Globo Play + Canais + Telecine">
             <h2>Globo Play + Canais + Telecine</h2>
-            <p>A
+            <p>Acesso à Globo Play e aos canais da TV Globo, além dos filmes do Telecine.</p>
+            <div class="button-container">
+                <p class="price">R$ 49,90/mês</p>
+                <!-- Substitua 'seu_numerodetelefone' pelo seu número de telefone -->
+                <a class="buy-button" href="https://wa.me/message/GPIYPTNUMB55H1?text=Quero%20comprar%20a%20assinatura%20do%20Globo%20Play%20%2B%20Canais%20%2B%20Telecine">Compre Agora</a>
+            </div>
         </div>
     </div>
 
